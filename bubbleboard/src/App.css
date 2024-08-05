@@ -1,0 +1,113 @@
+.App {
+  text-align: center;
+  position: relative;
+  height: 100vh; 
+  width: 100vw
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.input{
+	box-sizing: border-box;
+	width: 100%;
+	
+}
+.green-button{
+	background-color: green;
+	z-index: 11;
+}
+.button{
+	z-index: 11;
+	width: 100px;
+	position: relative
+}
+.bubble{
+	z-index: 10;
+	text-align: center;
+	position: absolute
+}
+.left-panel{
+	width: 10%;
+	height: 100%;
+	position: fixed;
+	background-color: steelblue;
+	z-index: 15
+}
+.body{
+	height: 100vh; 
+  	width: 100vw
+}
+.main-content{
+	margin-left: 10%;
+	width: 90%;
+	z-index: 1
+}
+.entry-item{
+	background-color:bisque;
+	border-color: black;
+	border-top: 10px;
+	padding: 10px;
+	margin-bottom: 10px;
+	cursor: pointer; /* Change cursor to pointer to indicate clickability */
+    pointer-events: auto; 
+    z-index:20;
+    position: relative
+}
+.green-entry-item{
+	background-color: green;
+	border-color: black;
+	border-top: 10px;
+	padding: 10px;
+	margin-bottom: 10px;
+	z-index: 20;
+	cursor: pointer; /* Change cursor to pointer to indicate clickability */
+    pointer-events: auto; 
+    position: relative
+}
+.xbutton{
+	background-color: red;
+	top: 1px;
+	right: 1px;
+	position: absolute;
+	z-index: 21;
+}
+.rename-field{
+	z-index: 22;
+	position: absolute;
+	font-size: large;
+	width: 10%;
+	justify-content: center;
+	margin-left: 40%
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
